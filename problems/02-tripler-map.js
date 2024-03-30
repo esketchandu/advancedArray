@@ -12,10 +12,13 @@ console.log(tripler([-5, 10, 0, 11])); // [ -15, 30, 0, 33 ]
 */
 
 let tripler = function(nums) {
-   const timesThree = nums.map((nums) => {
-    return nums * 3;
-    //console.log(nums)
+   
+  let arr = [];
+  const timesThree = nums.map((nums) => {
+    let product = nums * 3;
+    arr.push(product)
    })
+   return arr;
 };
 
 console.log(tripler([2, 7, 4])); // [ 6, 21, 12 ]
@@ -28,5 +31,3 @@ try {
   module.exports = null;
 }
 
-console.log(tripler([2, 7, 4])); // [ 6, 21, 12 ]
-//console.log(tripler([-5, 10, 0, 11])); // [ -15, 30, 0, 33 ]
