@@ -12,17 +12,18 @@ console.log(sumForEach([])); // 0
 */
 
 let sumForEach = function(arr) {
-  // Your code here
-  const sum = 0;
-  arr.forEach((element) => console.log(sum += element))
-    //console.log(sum += arr)
-    //return sum;
+  let sum = 0;
+    arr.forEach((arr) =>   {
+    sum += arr
+  });
+return sum;
 };
 
+// console.log(element)})
 //array1.forEach((element) => console.log(element))
 console.log(sumForEach([4, 3, -1, 10])); // 16
-//console.log(sumForEach([6, 7, 2])); // 15
-//console.log(sumForEach([])); // 0
+console.log(sumForEach([6, 7, 2])); // 15
+console.log(sumForEach([])); // 0
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
