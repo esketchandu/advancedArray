@@ -13,9 +13,33 @@ console.log(avgVal([])); // null
 
 */
 
+// let avgVal = function(arr) {
+//    if(arr.length === 0) {
+//     return null;
+//    }
+//  const average = arr.reduce((acc, currentValue) => {
+//   let avg = (acc + currentValue)/arr.length;
+//   console.log(avg)
+//  })
+
+// };
+
 let avgVal = function(arr) {
-    // Your code here 
+  if(arr.length === 0) {
+   return null;
+  }
+ let sum = 0;
+ let length = arr.length
+ arr.forEach((arr) => {
+
+  return (sum += arr)/length;
+ //console.log(arr.length)
+ })
+
 };
+console.log(avgVal([5, 10])); // 7.5
+console.log(avgVal([3, 7, 2, 1, 2])); // 3
+console.log(avgVal([])); // null
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
