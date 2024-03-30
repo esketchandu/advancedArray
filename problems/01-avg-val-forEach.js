@@ -28,14 +28,15 @@ let avgVal = function(arr) {
   if(arr.length === 0) {
    return null;
   }
+
  let sum = 0;
- let length = arr.length
+ let length = arr.length;
+ let avg = 0;
+ 
  arr.forEach((arr) => {
-
-  return (sum += arr)/length;
- //console.log(arr.length)
+  avg = (sum += arr)/length;
  })
-
+return avg;
 };
 console.log(avgVal([5, 10])); // 7.5
 console.log(avgVal([3, 7, 2, 1, 2])); // 3
