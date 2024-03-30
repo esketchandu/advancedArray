@@ -5,16 +5,21 @@ array.
 
 Solve this using Array's `map()` method.
 
-Examples: 
+Examples:
 
 console.log(tripler([2, 7, 4])); // [ 6, 21, 12 ]
 console.log(tripler([-5, 10, 0, 11])); // [ -15, 30, 0, 33 ]
 */
 
 let tripler = function(nums) {
-    // Your code here 
+   const timesThree = nums.map((nums) => {
+    return nums * 3;
+    //console.log(nums)
+   })
 };
 
+console.log(tripler([2, 7, 4])); // [ 6, 21, 12 ]
+console.log(tripler([-5, 10, 0, 11])); // [ -15, 30, 0, 33 ]
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
@@ -22,3 +27,6 @@ try {
 } catch (e) {
   module.exports = null;
 }
+
+console.log(tripler([2, 7, 4])); // [ 6, 21, 12 ]
+//console.log(tripler([-5, 10, 0, 11])); // [ -15, 30, 0, 33 ]
